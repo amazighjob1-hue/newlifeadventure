@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Life Adventure Disability</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- 🔷 TOP BAR -->
+      <div class="nla-topbar">
+  
+    <div class="topbar-right">
+      <div class="topbar-contact">
+      <a href="mailto:info@nla.com"><i class="fa-solid fa-envelope"></i> info@nla.com</a>
+      <a href="tel:+61123456789"><i class="fa-solid fa-phone"></i> 01 23 45 67 89</a>
+      </div>
+      <div class="lang-switch">
+        <a href="#" data-lang="en">EN</a> |
+        <a href="#" data-lang="ar">AR</a> |
+        <a href="#" data-lang="zh">中文</a>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="nla-header">
+      <div class="logo">
+        <a href="home-page.html"><img src="logoo.png" alt="New Life Adventure Disability Logo" /></a>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+<nav class="nla-nav">
+  <ul>
+    <li class="has-submenu">
+      <a href="home-page.html">Home</a>
+      
+      <ul class="submenu">
+        <li><a href="calculator-ndis.html">NDIS Calculator</a></li>
+        <li><a href="home-page.html#why-choose-us">Success Stories</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu">
+      <a href="about.html">About</a>
+      <ul class="submenu">
+        <li><a href="about.html#our-story">Join our team</a></li>
+      </ul>
+    </li>
+    <li class="has-submenu">
+      <a href="services.html">Services</a>
+      <ul class="submenu">
+        <li><a href="support-coordination.html">NDIS Support Coordination</a></li>
+        <li><a href="allied-therapy.html">Allied Health and Therapeutic Support</a></li>
+        <li><a href="nla-nursing.html">Nursing and Personal Care</a></li>
+        <li><a href="nla-day-programe.html">Day Programs and Community Access</a></li>
+        <li><a href="support-living.html">Supported Independent Living (SIL)</a></li>
+        <li><a href="behaviour-mental.html">Behavioural & Mental Health Support</a></li>
+        <li><a href="respite-care.html">Respite Care</a></li>
+        <li><a href="aged-care-support.html">Aged Care Support</a></li>
+        <li><a href="cultural-linguistic-support.html">Cultural & Linguistic Support</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+    </div>
+  </header>
+
+  <section class="nla-referral-form-hero">
+    <div class="nla-referral-form-hero-content">
+      <h1><span>Referral</span> Form</h1>
+      <p></p>
+    </div>
+    <div class="ndis-badge">
+            <img src="ndis logo.png" alt="NDIS Badge" />
+        </div>
+  </section>
+  
+  <form class="nla-referral-form" 
+      action="send-referral.php" 
+      method="POST">
+
+    <input type="text" name="website" style="display:none">
+ 
+<!-- ================= PARTICIPANT ================= -->
+<div class="nla-referral-card">
+<h2 class="nla-referral-title">Participant Details</h2>
+
+<div class="nla-referral-grid">
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Surname</label>
+<input class="nla-referral-input" type="text" name="surname" required>
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Given Name(s)</label>
+<input class="nla-referral-input" type="text" name="given_name" required>
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Preferred Name</label>
+<input class="nla-referral-input" type="text" name="preferred-name">
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Date of Birth</label>
+<input class="nla-referral-input" type="date" name="dob" required>
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">NDIS Number</label>
+<input class="nla-referral-input" type="text" name="ndis_number">
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Email</label>
+<input class="nla-referral-input" type="email" name="email" required>
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Mobile</label>
+<input class="nla-referral-input" type="tel" name="mobile" required>
+</div>
+
+<div class="nla-referral-group nla-referral-full">
+<label class="nla-referral-label">Residential Address</label>
+<input class="nla-referral-input" type="text" name="address" required>
+</div>
+
+</div>
+</div>
+
+<!-- ================= CULTURAL ================= -->
+<div class="nla-referral-card">
+<h2 class="nla-referral-title">Cultural & Communication</h2>
+
+<div class="nla-referral-grid">
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Country of Birth</label>
+<input class="nla-referral-input" type="text" name="country_of_birth" required>
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Language Spoken at Home</label>
+<input class="nla-referral-input" type="text" name="language_spoken_at_home">
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Interpreter Needed</label>
+<select class="nla-referral-input" name="interpreter">
+<option>No</option>
+<option>Yes</option>
+</select>
+</div>
+
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Communication Needs</label>
+<textarea class="nla-referral-textarea" name="communication_needs"></textarea>
+</div>
+
+</div>
+
+<!-- ================= SERVICES ================= -->
+<div class="nla-referral-card">
+<h2 class="nla-referral-title">Requested Services</h2>
+
+<div class="nla-referral-checkbox-grid">
+<label><input type="checkbox" name="services[]" value="core_supports"> Core Supports</label>
+<label><input type="checkbox" name="services[]" value="community_participation"> Community Participation</label>
+<label><input type="checkbox" name="services[]" value="life_skills"> Life Skills</label>
+<label><input type="checkbox" name="services[]" value="employment"> Employment</label>
+<label><input type="checkbox" name="services[]" value="physiotherapy"> Physiotherapy</label>
+<label><input type="checkbox" name="services[]" value="psychology"> Psychology</label>
+<label><input type="checkbox" name="services[]" value="speech_therapy"> Speech Therapy</label>
+<label><input type="checkbox" name="services[]" value="support_coordination"> Support Coordination</label>
+</div>
+
+</div>
+
+<!-- ================= DIAGNOSIS ================= -->
+<div class="nla-referral-card">
+<h2 class="nla-referral-title">Diagnosis & Background</h2>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Primary Disability</label>
+<textarea class="nla-referral-textarea" name="primary_disability"></textarea>
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Reason for Referral</label>
+<textarea class="nla-referral-textarea"></textarea>
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">NDIS Plan Goals</label>
+<textarea class="nla-referral-textarea"></textarea>
+</div>
+
+</div>
+
+<!-- ================= FUNDING ================= -->
+<div class="nla-referral-card">
+<h2 class="nla-referral-title">Funding Information</h2>
+
+<div class="nla-referral-grid">
+<div class="nla-referral-group">
+<label class="nla-referral-label">Funding Amount</label>
+<input class="nla-referral-input" type="text">
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Allocated Hours</label>
+<input class="nla-referral-input" type="text">
+</div>
+</div>
+
+</div>
+
+<!-- ================= RISK ================= -->
+<div class="nla-referral-card">
+<h2 class="nla-referral-title">Risk Assessment</h2>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Behaviours of Concern</label>
+<textarea class="nla-referral-textarea"></textarea>
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Substance Use History</label>
+<textarea class="nla-referral-textarea"></textarea>
+</div>
+
+</div>
+
+<!-- ================= EMERGENCY ================= -->
+<div class="nla-referral-card">
+<h2 class="nla-referral-title">Emergency Contact</h2>
+
+<div class="nla-referral-grid">
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Contact Name</label>
+<input class="nla-referral-input" type="text" required>
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Relationship</label>
+<input class="nla-referral-input" type="text">
+</div>
+
+<div class="nla-referral-group">
+<label class="nla-referral-label">Mobile</label>
+<input class="nla-referral-input" type="tel" required>
+</div>
+
+</div>
+
+</div>
+
+<button class="nla-referral-submit" type="submit">Submit Referral</button>
+
+</form>
+
+
+  
+  
+  <footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- COL 1 : ABOUT -->
+    <div class="footer-col">
+      <h4>New Life Adventure Disability</h4>
+      <p>
+        Providing personalised, culturally inclusive NDIS support
+        that puts you first.
+      </p>
+    </div>
+
+    <!-- COL 2 : CONTACT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fa-solid fa-phone"></i> 01 23 45 67 89</li>
+        <li><i class="fa-solid fa-envelope"></i> info@nla.com</li>
+        <li><i class="fa-solid fa-location-dot"></i> Australia</li>
+      </ul>
+    </div>
+
+    <!-- COL 3 : LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/services">Our Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="feedback-page.html">Feedback</a></li>
+      </ul>
+    </div>
+
+    <!-- COL 4 : SOCIAL -->
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    <p>© 2026 New Life Adventure Disability. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
