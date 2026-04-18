@@ -171,7 +171,7 @@ body {
 /* 🔷 HERO */
 .nla-hero {
   height: 60vh;
-  background: url("hero\ image.webp") center/cover no-repeat;
+  background: url("home-hero.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -1390,7 +1390,7 @@ html[dir="rtl"] .topbar-right {
 
 .contact-hero {
   height: 60vh;
-  background: url("hero-contact.jpg") center/cover no-repeat;
+  background: url("contact-hero.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   padding: 0 24px;
@@ -1739,7 +1739,7 @@ html[dir="rtl"] .topbar-right {
 
 .feedback-hero {
   height: 60vh;
-  background: url("feedback-hero.avif") center/cover no-repeat;
+  background: url("feedback-hero.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -1944,7 +1944,7 @@ html[dir="rtl"] .topbar-right {
 
 .nla-referral-form-hero {
   height: 60vh;
-  background: url("referral-form-image.webp") center/cover no-repeat;
+  background: url("referral-hero.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -2120,7 +2120,7 @@ html[dir="rtl"] .topbar-right {
 
 .services-hero {
   height: 60vh;
-  background: url("services-hero.png") center/cover no-repeat;
+  background: url("services-hero.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   padding: 0 24px;
@@ -2792,7 +2792,7 @@ grid-template-columns:1fr;
 
 .nla-nursing-hero {
 height: 60vh;
-background: url("nursing-hero.avif") center/cover no-repeat;
+background: url("coordination-hero.JPEG") center/cover no-repeat;
 position: relative;
 display: flex;
 align-items: center;
