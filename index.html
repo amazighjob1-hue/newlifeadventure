@@ -285,6 +285,33 @@
 
 </section>
 
+  <script>
+const carousel = document.querySelector(".community-story-carousel");
+const videos = document.querySelectorAll(".community-story-video");
+
+let index = 0;
+const visible = 3;
+
+document.querySelector(".story-arrow.right").addEventListener("click", () => {
+  if (index < videos.length - visible) {
+    index++;
+    updateCarousel();
+  }
+});
+
+document.querySelector(".story-arrow.left").addEventListener("click", () => {
+  if (index > 0) {
+    index--;
+    updateCarousel();
+  }
+});
+
+function updateCarousel() {
+  const width = videos[0].offsetWidth + 20;
+  carousel.style.transform = `translateX(-${index * width}px)`;
+}
+</script>
+
   <!-- 🔷 TESTIMONIALS -->
 <section class="testimonials">
   <h2>What Participants Say</h2>
