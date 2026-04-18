@@ -457,24 +457,58 @@ body {
 }
 
 .community-story-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.community-story-carousel {
   display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.community-story-video {
-  flex: 1;
-}
-
-.community-story-video video {
-  width: 60%;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  gap: 20px;
   transition: transform 0.4s ease;
 }
 
-.community-story-video video:hover {
-  transform: scale(1.03);
+.community-story-video {
+  flex: 0 0 calc(100% / 3 - 14px);
+}
+
+.community-story-video video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Flèches */
+.story-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.7);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.story-arrow.left {
+  left: 10px;
+}
+
+.story-arrow.right {
+  right: 10px;
+}
+
+@media (max-width: 900px) {
+  .community-story-video {
+    flex: 0 0 calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .community-story-video {
+    flex: 0 0 100%;
+  }
 }
 
 .community-story-text {
