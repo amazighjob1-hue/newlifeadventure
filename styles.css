@@ -515,12 +515,6 @@ body {
   flex: 1;
 }
 
-.community-story-text h3 {
-  font-size: 26px;
-  margin-bottom: 20px;
-  color: var(--blue);
-}
-
 .community-story-text p {
   font-size: 16px;
   line-height: 1.8;
