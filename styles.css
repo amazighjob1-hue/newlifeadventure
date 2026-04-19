@@ -228,12 +228,15 @@ body {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 28px;
-  background: transparent;
+  background: var(--white);
   color: var(--red);
   border: 2px solid var(--red);
   text-decoration: none;
   border-radius: 4px;
 }
+
+.btn-secondary:hover {
+  background: var(--blue);
 
 .ndis-badge {
   position: absolute;
