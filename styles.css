@@ -1767,7 +1767,7 @@ html[dir="rtl"] .topbar-right {
 
 .feedback-hero {
   height: 60vh;
-  background: url("feedback-hero.jpg") center/cover no-repeat;
+  background: url("coordination-hero.JPEG") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -1972,7 +1972,7 @@ html[dir="rtl"] .topbar-right {
 
 .nla-referral-form-hero {
   height: 60vh;
-  background: url("referral-hero.jpg") center/cover no-repeat;
+  background: url("coordination-hero.JPEG") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
