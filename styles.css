@@ -224,7 +224,7 @@ body {
   background: var(--blue);
 }
 
-.btn-secondary {
+.hero-btn-secondary {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 28px;
@@ -235,7 +235,7 @@ body {
   border-radius: 4px;
 }
 
-.btn-secondary:hover {
+.hero-btn-secondary:hover {
   background: var(--blue);
 
 .ndis-badge {
