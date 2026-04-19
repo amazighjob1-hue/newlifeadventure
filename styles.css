@@ -224,6 +224,17 @@ body {
   background: var(--blue);
 }
 
+.btn-secondary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: transparent;
+  color: var(--red);
+  border: 2px solid var(--red);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
 .ndis-badge {
   position: absolute;
   bottom: 100px;
