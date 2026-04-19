@@ -224,6 +224,16 @@ body {
   background: var(--blue);
 }
 
+.hero-btn-secondary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: transparent;
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+  text-decoration: none;
+  border-radius: 4px;
+}
 
 .ndis-badge {
   position: absolute;
