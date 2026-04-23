@@ -149,7 +149,7 @@ body {
   display: none;
   position: absolute;
   top: 100%;
-  background: var(--yellow);
+  background: #f9a8259c;
   padding: 5px;
   min-width: 180px;
   list-style: none;
