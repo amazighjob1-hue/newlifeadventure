@@ -165,7 +165,194 @@ body {
   display: block;
 }
 
+/* =========================
+   RESPONSIVE HEADER + TOPBAR
+========================= */
 
+/* TABLET */
+@media (max-width: 1024px) {
+
+  .topbar {
+    padding: 8px 16px;
+  }
+
+  .topbar-contact {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .topbar-contact a {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  .nla-header {
+    flex-wrap: wrap;
+    margin-right: 0;
+    padding: 10px 20px;
+  }
+
+  .nla-header img {
+    height: 100px;
+    margin-left: 0;
+  }
+
+  .search-bar {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-bar input {
+    width: 250px;
+    margin-left: 0;
+  }
+
+  .nla-nav {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .nla-nav > ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nla-header li {
+    margin-left: 0;
+  }
+
+  .submenu {
+    min-width: 160px;
+  }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  /* 🔷 TOPBAR */
+  .topbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .topbar-right {
+    margin-left: 0;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .topbar-contact {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .topbar-contact a {
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .lang-switch {
+    margin-top: 8px;
+  }
+
+  .lang-switch a {
+    margin: 0 6px;
+  }
+
+
+  /* 🔷 HEADER */
+  .nla-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-right: 0;
+  }
+
+  .nla-header img {
+    height: 90px;
+    margin-left: 0;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .search-bar input {
+    width: 100%;
+    max-width: 280px;
+    margin-left: 0;
+  }
+
+  .search-bar button {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* 🔷 NAVIGATION */
+  .nla-nav {
+    width: 100%;
+  }
+
+  .nla-nav > ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .nla-header li {
+    margin-left: 0;
+  }
+
+  /* 🔷 SUBMENU */
+  .submenu {
+    position: static;
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .has-submenu:hover .submenu {
+    display: block;
+  }
+
+  .submenu li {
+    margin: 10px 0;
+  }
+}
+
+
+/* PETITS TÉLÉPHONES */
+@media (max-width: 480px) {
+
+  .nla-header img {
+    height: 75px;
+  }
+
+  .search-bar input {
+    max-width: 220px;
+    padding: 7px 12px;
+  }
+
+  .topbar {
+    font-size: 12px;
+  }
+
+  .topbar-contact a,
+  .lang-switch {
+    font-size: 12px;
+  }
+
+  .nla-header a {
+    font-size: 14px;
+  }
+}
 
 
 
