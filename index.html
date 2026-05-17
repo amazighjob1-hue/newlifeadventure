@@ -41,10 +41,13 @@
       </div>
 
       <div class="search-bar">
-        <input type="text" placeholder="Search..." />
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-      </div>
-      <script>
+  <input type="text" id="searchInput" placeholder="Search..." />
+  <button onclick="searchSite()">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+</div>
+
+<script>
   function searchSite() {
     let query = document.getElementById("searchInput").value.toLowerCase();
 
