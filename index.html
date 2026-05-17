@@ -40,10 +40,10 @@
         <a href="index.html"><img src="logoo.png" alt="New Life Adventure Disability Logo" /></a>
       </div>
 
-      <div class="search-bar">
-  <input type="text" id="searchInput" placeholder="Search..." />
+     <div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search...">
 
-  <button type="button" onclick="searchSite()">
+  <button type="button" id="searchBtn">
     <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 </div>
@@ -350,32 +350,6 @@
 
 </section>
 
-  <script>
-const carousel = document.querySelector(".community-story-carousel");
-const videos = document.querySelectorAll(".community-story-video");
-
-let index = 0;
-const visible = 3;
-
-document.querySelector(".story-arrow.right").addEventListener("click", () => {
-  if (index < videos.length - visible) {
-    index++;
-    updateCarousel();
-  }
-});
-
-document.querySelector(".story-arrow.left").addEventListener("click", () => {
-  if (index > 0) {
-    index--;
-    updateCarousel();
-  }
-});
-
-function updateCarousel() {
-  const width = videos[0].offsetWidth + 20;
-  carousel.style.transform = `translateX(-${index * width}px)`;
-}
-</script>
 
   <!-- 🔷 TESTIMONIALS -->
 <section class="testimonials">
@@ -438,66 +412,6 @@ function updateCarousel() {
     </div>
   </div>
 </section>
-
-<script>
- const track = document.querySelector('.testimonial-track');
-const cards = document.querySelectorAll('.testimonial-card');
-let index = 0;
-
-function rotateTestimonials() {
-  index++;
-  if (index > cards.length - 3) {
-    index = 0;
-  }
-
-  const cardWidth = cards[0].offsetWidth + 24;
-  track.style.transform = `translateX(-${index * cardWidth}px)`;
-}
-
-setInterval(rotateTestimonials, 4000);
-
-  function searchSite() {
-
-  let query = document
-    .getElementById("searchInput")
-    .value
-    .toLowerCase()
-    .trim();
-
-  let pages = {
-    "home": "index.html",
-    "about": "about.html",
-    "services": "services.html",
-    "contact": "contact.html",
-    "calculator": "calculator-ndis.html",
-    "stories": "success-stories.html",
-    "nursing": "nla-nursing.html",
-    "sil": "support-living.html",
-    "mental": "behaviour-mental.html",
-    "respite": "respite-care.html"
-  };
-
-  for (let key in pages) {
-    if (query.includes(key)) {
-      window.location.href = pages[key];
-      return;
-    }
-  }
-
-  alert("No results found");
-}
-
-document
-  .getElementById("searchInput")
-  .addEventListener("keydown", function(e) {
-
-    if (e.key === "Enter") {
-      searchSite();
-    }
-
-});
-
-</script>
 
 
 <section class="cta">
@@ -575,6 +489,118 @@ document
   </div>
 </footer>
 
+  <script>
+
+// ================= CAROUSEL STORIES =================
+
+const carousel = document.querySelector(".community-story-carousel");
+const videos = document.querySelectorAll(".community-story-video");
+const rightArrow = document.querySelector(".story-arrow.right");
+const leftArrow = document.querySelector(".story-arrow.left");
+
+if (carousel && videos.length && rightArrow && leftArrow) {
+
+  let index = 0;
+  const visible = 3;
+
+  rightArrow.addEventListener("click", () => {
+    if (index < videos.length - visible) {
+      index++;
+      updateCarousel();
+    }
+  });
+
+  leftArrow.addEventListener("click", () => {
+    if (index > 0) {
+      index--;
+      updateCarousel();
+    }
+  });
+
+  function updateCarousel() {
+    const width = videos[0].offsetWidth + 20;
+    carousel.style.transform = `translateX(-${index * width}px)`;
+  }
+}
+
+
+// ================= TESTIMONIALS =================
+
+const track = document.querySelector('.testimonial-track');
+const cards = document.querySelectorAll('.testimonial-card');
+
+if (track && cards.length) {
+
+  let testimonialIndex = 0;
+
+  function rotateTestimonials() {
+
+    testimonialIndex++;
+
+    if (testimonialIndex > cards.length - 3) {
+      testimonialIndex = 0;
+    }
+
+    const cardWidth = cards[0].offsetWidth + 24;
+
+    track.style.transform =
+      `translateX(-${testimonialIndex * cardWidth}px)`;
+  }
+
+  setInterval(rotateTestimonials, 4000);
+}
+
+
+// ================= SEARCH =================
+
+const searchInput = document.getElementById("searchInput");
+
+if (searchInput) {
+
+  function searchSite() {
+
+    let query = searchInput.value.toLowerCase().trim();
+
+    let pages = {
+      "home": "index.html",
+      "about": "about.html",
+      "services": "services.html",
+      "contact": "contact.html",
+      "calculator": "calculator-ndis.html",
+      "stories": "success-stories.html",
+      "nursing": "nla-nursing.html",
+      "sil": "support-living.html",
+      "mental": "behaviour-mental.html",
+      "respite": "respite-care.html"
+    };
+
+    for (let key in pages) {
+
+      if (query.includes(key)) {
+        window.location.href = pages[key];
+        return;
+      }
+
+    }
+
+    alert("No results found");
+  }
+
+  document
+    .getElementById("searchBtn")
+    .addEventListener("click", searchSite);
+
+  searchInput.addEventListener("keydown", function(e) {
+
+    if (e.key === "Enter") {
+      searchSite();
+    }
+
+  });
+
+}
+
+</script>
 
 </body>
 </html>
