@@ -44,6 +44,37 @@
         <input type="text" placeholder="Search..." />
         <button><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
+      <script>
+  function searchSite() {
+    let query = document.getElementById("searchInput").value.toLowerCase();
+
+    // Exemple de pages/sections
+    let pages = {
+      "home": "index.html",
+      "about": "about.html",
+      "services": "services.html",
+      "contact": "contact.html",
+      "ndis": "services.html"
+    };
+
+    // Vérifie si le mot existe
+    for (let key in pages) {
+      if (query.includes(key)) {
+        window.location.href = pages[key];
+        return;
+      }
+    }
+
+    alert("No results found.");
+  }
+
+  // Entrée clavier (Enter)
+  document.getElementById("searchInput").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+      searchSite();
+    }
+  });
+</script>
 
      <nav class="nla-nav">
   <ul>
