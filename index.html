@@ -456,6 +456,47 @@ function rotateTestimonials() {
 
 setInterval(rotateTestimonials, 4000);
 
+  function searchSite() {
+
+  let query = document
+    .getElementById("searchInput")
+    .value
+    .toLowerCase()
+    .trim();
+
+  let pages = {
+    "home": "index.html",
+    "about": "about.html",
+    "services": "services.html",
+    "contact": "contact.html",
+    "calculator": "calculator-ndis.html",
+    "stories": "success-stories.html",
+    "nursing": "nla-nursing.html",
+    "sil": "support-living.html",
+    "mental": "behaviour-mental.html",
+    "respite": "respite-care.html"
+  };
+
+  for (let key in pages) {
+    if (query.includes(key)) {
+      window.location.href = pages[key];
+      return;
+    }
+  }
+
+  alert("No results found");
+}
+
+document
+  .getElementById("searchInput")
+  .addEventListener("keydown", function(e) {
+
+    if (e.key === "Enter") {
+      searchSite();
+    }
+
+});
+
 </script>
 
 
@@ -533,49 +574,6 @@ setInterval(rotateTestimonials, 4000);
     ABN: 22 650 711 318.</p>
   </div>
 </footer>
-
-  <script>
-function searchSite() {
-
-  let query = document
-    .getElementById("searchInput")
-    .value
-    .toLowerCase()
-    .trim();
-
-  let pages = {
-    "home": "index.html",
-    "about": "about.html",
-    "services": "services.html",
-    "contact": "contact.html",
-    "calculator": "calculator-ndis.html",
-    "stories": "success-stories.html",
-    "nursing": "nla-nursing.html",
-    "sil": "support-living.html",
-    "mental": "behaviour-mental.html",
-    "respite": "respite-care.html"
-  };
-
-  for (let key in pages) {
-    if (query.includes(key)) {
-      window.location.href = pages[key];
-      return;
-    }
-  }
-
-  alert("No results found");
-}
-
-document
-  .getElementById("searchInput")
-  .addEventListener("keydown", function(e) {
-
-    if (e.key === "Enter") {
-      searchSite();
-    }
-
-});
-</script>
 
 
 </body>
