@@ -25,35 +25,34 @@ body {
   color: #1f2933;
 }
 
-/* 🔷 TOP BAR */
+/* =========================================
+   TOPBAR
+========================================= */
+
 .nla-topbar {
   background: var(--blue-dark);
   color: white;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 8px 24px;
   font-size: 14px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-/* 🔥 force le bloc à droite */
 .topbar-right {
   margin-left: auto;
   display: flex;
-  flex-direction: column;   /* email/phone puis langues */
-  align-items: flex-end;    /* 🔥 aligné à droite */
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-/* email + phone sur une ligne */
-.topbar-right {
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;     /* empile lignes */
-  align-items: flex-end;      /* 🔥 aligné à droite */
-}
-
-/* 🔥 email + phone sur la même ligne */
 .topbar-contact {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .topbar-contact a {
@@ -63,13 +62,10 @@ body {
   text-decoration: none;
 }
 
-/* langues en dessous */
 .lang-switch {
   margin-top: 4px;
   font-size: 13px;
 }
-
-/* langues en dessous */
 
 .lang-switch a {
   color: white;
@@ -77,34 +73,44 @@ body {
   margin-left: 12px;
 }
 
+/* =========================================
+   HEADER
+========================================= */
 
-/* 🔷 HEADER */
 .nla-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: white;
   padding: 16px 24px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .nla-header img {
-  height: 130px;
-  margin-left: 50px;
+  height: 110px;
+  max-width: 100%;
+  margin-left: 0;
 }
+
+/* SEARCH BAR */
 
 .search-bar {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-width: 250px;
 }
 
 .search-bar input {
-  width: 180px;
-  padding: 8px 14px;
+  width: 100%;
+  max-width: 260px;
+  padding: 10px 14px;
   border: 1px solid #ddd;
   border-radius: 30px;
   outline: none;
-  margin-left: 800px;
+  margin-left: 0;
 }
 
 .search-bar button {
@@ -113,33 +119,40 @@ body {
   height: 40px;
   border: none;
   color: white;
-  padding: 8px 12px;
   margin-left: 8px;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.nla-header li {
-  margin-left: 24px;
+/* NAVIGATION */
+
+.nla-nav > ul {
+  display: flex;
   gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.nla-header li {
+  margin-left: 0;
 }
 
 .nla-header a {
   text-decoration: none;
   color: var(--blue-dark);
   font-weight: 600;
+  transition: 0.3s;
 }
 
 .nla-header a:hover {
   color: var(--red);
 }
 
-.nla-nav > ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
+/* =========================================
+   SUBMENU
+========================================= */
 
 .has-submenu {
   position: relative;
@@ -149,8 +162,9 @@ body {
   display: none;
   position: absolute;
   top: 100%;
-  background: #f9a8259c;
-  padding: 5px;
+  left: 0;
+  background: rgba(249, 168, 37, 0.95);
+  padding: 10px;
   min-width: 180px;
   list-style: none;
   z-index: 999;
@@ -158,221 +172,39 @@ body {
 }
 
 .submenu li {
-  margin: 18px 0;
+  margin: 10px 0;
 }
 
 .has-submenu:hover .submenu {
   display: block;
 }
 
-/* =========================
-   RESPONSIVE HEADER + TOPBAR
-========================= */
+/* =========================================
+   HERO
+========================================= */
 
-/* TABLET */
-@media (max-width: 1024px) {
-
-  .topbar {
-    padding: 8px 16px;
-  }
-
-  .topbar-contact {
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
-  .topbar-contact a {
-    margin-left: 10px;
-    font-size: 13px;
-  }
-
-  .nla-header {
-    flex-wrap: wrap;
-    margin-right: 0;
-    padding: 10px 20px;
-  }
-
-  .nla-header img {
-    height: 100px;
-    margin-left: 0;
-  }
-
-  .search-bar {
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .search-bar input {
-    width: 250px;
-    margin-left: 0;
-  }
-
-  .nla-nav {
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  .nla-nav > ul {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .nla-header li {
-    margin-left: 0;
-  }
-
-  .submenu {
-    min-width: 160px;
-  }
-}
-
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-  /* 🔷 TOPBAR */
-  .topbar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .topbar-right {
-    margin-left: 0;
-    align-items: center;
-    margin-top: 8px;
-  }
-
-  .topbar-contact {
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .topbar-contact a {
-    margin-left: 0;
-    font-size: 13px;
-  }
-
-  .lang-switch {
-    margin-top: 8px;
-  }
-
-  .lang-switch a {
-    margin: 0 6px;
-  }
-
-
-  /* 🔷 HEADER */
-  .nla-header {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    margin-right: 0;
-  }
-
-  .nla-header img {
-    height: 90px;
-    margin-left: 0;
-  }
-
-  .search-bar {
-    width: 100%;
-    margin: 15px 0;
-  }
-
-  .search-bar input {
-    width: 100%;
-    max-width: 280px;
-    margin-left: 0;
-  }
-
-  .search-bar button {
-    width: 38px;
-    height: 38px;
-  }
-
-  /* 🔷 NAVIGATION */
-  .nla-nav {
-    width: 100%;
-  }
-
-  .nla-nav > ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    padding: 0;
-  }
-
-  .nla-header li {
-    margin-left: 0;
-  }
-
-  /* 🔷 SUBMENU */
-  .submenu {
-    position: static;
-    display: none;
-    width: 100%;
-    text-align: center;
-    margin-top: 8px;
-  }
-
-  .has-submenu:hover .submenu {
-    display: block;
-  }
-
-  .submenu li {
-    margin: 10px 0;
-  }
-}
-
-
-/* PETITS TÉLÉPHONES */
-@media (max-width: 480px) {
-
-  .nla-header img {
-    height: 75px;
-  }
-
-  .search-bar input {
-    max-width: 220px;
-    padding: 7px 12px;
-  }
-
-  .topbar {
-    font-size: 12px;
-  }
-
-  .topbar-contact a,
-  .lang-switch {
-    font-size: 12px;
-  }
-
-  .nla-header a {
-    font-size: 14px;
-  }
-}
-
-
-
-/* 🔷 HERO */
 .nla-hero {
   height: 60vh;
   background: url("home-hero.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0 24px;
+  justify-content: center;
+  padding: 40px 24px;
   border-radius: 80px 0 80px 0;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .nla-hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(247, 80, 86, 0.679), rgba(11, 27, 197, 0.728));
+  background: linear-gradient(
+    to right,
+    rgba(247, 80, 86, 0.68),
+    rgba(11, 27, 197, 0.72)
+  );
   border-radius: 80px 0 80px 0;
 }
 
@@ -381,12 +213,13 @@ body {
   color: white;
   max-width: 700px;
   text-align: center;
-  margin: 0 auto;
+  z-index: 2;
 }
 
 .hero-content h1 {
   font-size: 48px;
   margin-bottom: 15px;
+  line-height: 1.2;
 }
 
 .hero-content h1 span {
@@ -396,16 +229,24 @@ body {
 .hero-content p {
   margin-bottom: 30px;
   font-size: 18px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+
+.btn-primary,
+.hero-btn-secondary {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
 }
 
 .btn-primary {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 28px;
   background: var(--red);
   color: white;
-  text-decoration: none;
-  border-radius: 4px;
 }
 
 .btn-primary:hover {
@@ -413,37 +254,56 @@ body {
 }
 
 .hero-btn-secondary {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 28px;
   background: transparent;
   color: var(--yellow);
   border: 2px solid var(--yellow);
-  text-decoration: none;
-  border-radius: 4px;
 }
+
+.hero-btn-secondary:hover {
+  background: var(--yellow);
+  color: black;
+}
+
+/* BADGE */
 
 .ndis-badge {
   position: absolute;
-  bottom: 100px;
-  left: 80px;
+  bottom: 40px;
+  left: 40px;
+  z-index: 2;
 }
 
 .ndis-badge img {
-  height: 120px;
+  height: 110px;
   display: block;
 }
 
-/* =========================
-   RESPONSIVE HERO SECTION
-========================= */
+/* =========================================
+   TABLET
+========================================= */
 
-/* TABLET */
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
+
+  .nla-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .nla-nav > ul {
+    justify-content: center;
+  }
+
+  .nla-header img {
+    height: 90px;
+  }
 
   .nla-hero {
-    height: 55vh;
-    padding: 0 20px;
+    height: auto;
+    padding: 80px 20px;
     border-radius: 50px 0 50px 0;
   }
 
@@ -451,66 +311,12 @@ body {
     border-radius: 50px 0 50px 0;
   }
 
-  .hero-content {
-    max-width: 600px;
-  }
-
   .hero-content h1 {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   .hero-content p {
     font-size: 16px;
-  }
-
-  .ndis-badge {
-    bottom: 60px;
-    left: 40px;
-  }
-
-  .ndis-badge img {
-    height: 90px;
-  }
-}
-
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-  .nla-hero {
-    height: auto;
-    min-height: 70vh;
-    padding: 60px 20px;
-    text-align: center;
-    border-radius: 35px 0 35px 0;
-  }
-
-  .nla-hero::before {
-    border-radius: 35px 0 35px 0;
-  }
-
-  .hero-content {
-    max-width: 100%;
-  }
-
-  .hero-content h1 {
-    font-size: 32px;
-    line-height: 1.3;
-  }
-
-  .hero-content p {
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 24px;
-  }
-
-  .btn-primary,
-  .hero-btn-secondary {
-    display: block;
-    width: fit-content;
-    margin: 12px auto;
-    padding: 12px 22px;
-    font-size: 14px;
   }
 
   .ndis-badge {
@@ -520,47 +326,93 @@ body {
   }
 
   .ndis-badge img {
-    height: 80px;
-    margin: 0 auto;
+    margin: auto;
+    height: 90px;
   }
 }
 
+/* =========================================
+   MOBILE
+========================================= */
 
-/* PETITS TÉLÉPHONES */
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+
+  .nla-topbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .topbar-right {
+    align-items: center;
+  }
+
+  .topbar-contact {
+    justify-content: center;
+  }
+
+  .nla-header {
+    padding: 12px;
+  }
+
+  .nla-header img {
+    height: 70px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .search-bar input {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .search-bar button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .nla-nav > ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .submenu {
+    position: static;
+    width: 100%;
+  }
 
   .nla-hero {
-    padding: 50px 16px;
-    border-radius: 25px 0 25px 0;
+    padding: 60px 16px;
+    border-radius: 30px 0 30px 0;
+    text-align: center;
   }
 
   .nla-hero::before {
-    border-radius: 25px 0 25px 0;
+    border-radius: 30px 0 30px 0;
   }
 
   .hero-content h1 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .hero-content p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .btn-primary,
   .hero-btn-secondary {
     width: 100%;
-    max-width: 240px;
-    text-align: center;
-    font-size: 13px;
-    padding: 11px 18px;
+    max-width: 260px;
+    display: block;
+    margin: 10px auto;
   }
 
   .ndis-badge img {
-    height: 65px;
+    height: 75px;
   }
 }
-
-
 
 
 .why-nla {
