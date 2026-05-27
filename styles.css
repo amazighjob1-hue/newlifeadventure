@@ -84,7 +84,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: white;
-  margin-right: 50px;
+  padding: 16px 24px;
 }
 
 .nla-header img {
