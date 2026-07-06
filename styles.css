@@ -191,7 +191,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 40px 24px;
-  border-radius: 80px 0 80px 0;
   margin-bottom: 20px;
   overflow: hidden;
 }
@@ -723,17 +722,6 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 0 80px 0 80px;
-}
-
-.testimonials::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 700px;
-  top: 0;
-  right: 0;
-  background-image: radial-gradient(circle, rgba(116, 3, 3, 0.443) 2px, transparent 2px);
-  background-size: 20px 20px;
 }
 
 
@@ -1300,16 +1288,6 @@ html[dir="rtl"] .topbar-right {
   overflow: hidden;
 }
 
-.about-info::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 500px;
-  bottom: 0;
-  right: 0;
-  background-image: radial-gradient(circle, rgba(116, 3, 3, 0.443) 2px, transparent 2px);
-  background-size: 20px 20px;
-}
 
 .about-info-container {
   max-width: 900px;
@@ -1372,16 +1350,6 @@ html[dir="rtl"] .topbar-right {
   overflow: hidden;
 }
 
-.about-vision::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 700px;
-  top: 0;
-  left: 0;
-  background-image: radial-gradient(circle, rgba(116, 3, 3, 0.443) 2px, transparent 2px);
-  background-size: 20px 20px;
-}
 
 .about-vision-content {
   display: flex;
@@ -1501,17 +1469,6 @@ html[dir="rtl"] .topbar-right {
   border-radius: 0 80px 0 80px;
   position: relative;
   overflow: hidden;
-}
-
-.about-team::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 1000px;
-  bottom: 0;
-  right: 0;
-  background-image: radial-gradient(circle, rgba(116, 3, 3, 0.443) 2px, transparent 2px);
-  background-size: 20px 20px;
 }
 
 .about-team h2 {
@@ -1684,17 +1641,6 @@ html[dir="rtl"] .topbar-right {
   flex-wrap: wrap;
 }
 
-.contact-links::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 800px;
-  bottom: 0;
-  left: 0;
-  background-image: radial-gradient(circle, rgba(116, 3, 3, 0.443) 2px, transparent 2px);
-  background-size: 20px 20px;
-}
-
 .contact-card {
   background: white;
   text-decoration: none;
@@ -1815,17 +1761,6 @@ html[dir="rtl"] .topbar-right {
   border-radius: 0 80px 0 80px;
   position: relative;
   overflow: hidden;
-}
-
-.ndis-enquiry::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 1200px;
-  bottom: 0;
-  right: 0;
-  background-image: radial-gradient(circle, rgba(116, 3, 3, 0.443) 2px, transparent 2px);
-  background-size: 20px 20px;
 }
 
 .ndis-enquiry h2 {
