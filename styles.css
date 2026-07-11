@@ -797,14 +797,142 @@ body {
   box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3);
 }
 
+/* ===========================
+   TABLETTE
+=========================== */
 @media (max-width: 992px) {
-  .community-story-wrapper {
-    flex-direction: column;
+
+  .community-story-section {
+    padding: 80px 20px;
+  }
+
+  .community-story-header {
+    margin-bottom: 45px;
   }
 
   .community-story-header h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
+
+  .community-story-carousel {
+    gap: 16px;
+  }
+
+  .community-story-video {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  .community-story-video video {
+    border-radius: 10px;
+  }
+
+  .story-arrow {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+@media (max-width: 768px) {
+
+  .community-story-section {
+    padding: 60px 16px;
+  }
+
+  .community-story-header {
+    margin-bottom: 35px;
+  }
+
+  .community-story-header h2 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .community-story-header h2::after {
+    width: 80px;
+    height: 3px;
+    margin-top: 12px;
+  }
+
+  .community-story-carousel {
+    gap: 12px;
+  }
+
+  .community-story-video {
+    flex: 0 0 100%;
+  }
+
+  .community-story-video video {
+    border-radius: 10px;
+  }
+
+  .community-story-text p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .community-story-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+
+  .story-arrow {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .story-arrow.left {
+    left: 8px;
+  }
+
+  .story-arrow.right {
+    right: 8px;
+  }
+
+}
+
+/* ===========================
+   PETITS TELEPHONES
+=========================== */
+@media (max-width: 480px) {
+
+  .community-story-section {
+    padding: 50px 14px;
+  }
+
+  .community-story-header h2 {
+    font-size: 22px;
+  }
+
+  .community-story-carousel {
+    gap: 10px;
+  }
+
+  .community-story-video video {
+    border-radius: 8px;
+  }
+
+  .community-story-text p {
+    font-size: 14px;
+  }
+
+  .community-story-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+  }
+
+  .story-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
 }
 
 /* TESTIMONIALS SECTION */
