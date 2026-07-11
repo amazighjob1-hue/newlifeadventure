@@ -758,18 +758,6 @@ body {
   right: 10px;
 }
 
-@media (max-width: 900px) {
-  .community-story-video {
-    flex: 0 0 calc(100% / 2 - 10px);
-  }
-}
-
-@media (max-width: 600px) {
-  .community-story-video {
-    flex: 0 0 100%;
-  }
-}
-
 .community-story-text {
   flex: 1;
 }
