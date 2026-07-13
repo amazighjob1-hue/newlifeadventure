@@ -1588,6 +1588,114 @@ html[dir="rtl"] .topbar-right {
   text-align: left;
 }
 
+/* ===========================
+   TABLETTES (1024px et moins)
+=========================== */
+@media (max-width: 1024px) {
+
+  .about-mission,
+  .about-vision {
+    padding: 70px 30px;
+  }
+
+  .about-mission-content,
+  .about-vision-content {
+    gap: 30px;
+  }
+
+  .about-mission-text,
+  .about-vision-text {
+    width: 50%;
+  }
+
+  .about-mission-content h2,
+  .about-vision-content h2 {
+    font-size: 32px;
+  }
+
+  .about-mission-content img,
+  .about-vision-content img {
+    max-width: 420px;
+  }
+
+}
+
+/* ===========================
+   PETITES TABLETTES
+=========================== */
+@media (max-width: 768px) {
+
+  .about-mission,
+  .about-vision {
+    padding: 60px 20px;
+    border-radius: 0;
+  }
+
+  .about-mission-content,
+  .about-vision-content {
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+  }
+
+  /* Vision : image en premier */
+  .about-vision-content {
+    flex-direction: column-reverse;
+  }
+
+  .about-mission-text,
+  .about-vision-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-mission-content h2,
+  .about-vision-content h2 {
+    font-size: 30px;
+  }
+
+  .about-mission-content img,
+  .about-vision-content img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+}
+
+/* ===========================
+   MOBILES
+=========================== */
+@media (max-width: 480px) {
+
+  .about-mission,
+  .about-vision {
+    padding: 50px 18px;
+  }
+
+  .about-mission-content,
+  .about-vision-content {
+    gap: 25px;
+  }
+
+  .about-mission-content h2,
+  .about-vision-content h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .about-mission-content p,
+  .about-vision-content p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .about-mission-content img,
+  .about-vision-content img {
+    border-radius: 8px;
+  }
+
+}
+
 .why-nla-about {
   padding: 80px 24px;
   background: white;
@@ -1729,6 +1837,116 @@ html[dir="rtl"] .topbar-right {
 .team-member p {
   font-size: 14px;
   color: #555;
+}
+
+/* ===========================
+   TABLETTES (1024px)
+=========================== */
+@media (max-width: 1024px) {
+
+  .about-team {
+    padding: 70px 30px;
+    border-radius: 0 60px 0 60px;
+  }
+
+  .about-team h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+
+  .about-team p {
+    max-width: 700px;
+    margin-bottom: 50px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .team-member {
+    height: 340px;
+    padding: 22px;
+  }
+
+}
+
+/* ===========================
+   PETITES TABLETTES
+=========================== */
+@media (max-width: 768px) {
+
+  .about-team {
+    padding: 60px 20px;
+    border-radius: 0;
+  }
+
+  .about-team h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .about-team p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    max-width: 500px;
+  }
+
+  .team-member {
+    height: auto;
+    padding: 24px;
+  }
+
+  .team-member img {
+    height: 320px;
+  }
+
+}
+
+/* ===========================
+   MOBILES
+=========================== */
+@media (max-width: 480px) {
+
+  .about-team {
+    padding: 50px 18px;
+  }
+
+  .about-team h2 {
+    font-size: 26px;
+  }
+
+  .about-team p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+  }
+
+  .team-grid {
+    gap: 20px;
+  }
+
+  .team-member {
+    padding: 18px;
+  }
+
+  .team-member img {
+    height: 260px;
+  }
+
+  .team-member h3 {
+    font-size: 20px;
+  }
+
+  .team-member p {
+    font-size: 14px;
+  }
+
 }
 
 .about-commitment {
