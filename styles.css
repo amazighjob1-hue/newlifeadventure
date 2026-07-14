@@ -2148,6 +2148,102 @@ html[dir="rtl"] .topbar-right {
   border-radius: 12px;
 }
 
+/* ===========================
+   TABLETTES (1024px)
+=========================== */
+@media (max-width: 1024px) {
+
+  .contact-location-section {
+    padding: 70px 30px;
+  }
+
+  .contact-location-container {
+    gap: 35px;
+  }
+
+  .contact-location-info h2 {
+    font-size: 30px;
+  }
+
+  .contact-location-map iframe {
+    height: 320px;
+  }
+
+}
+
+/* ===========================
+   PETITES TABLETTES
+=========================== */
+@media (max-width: 768px) {
+
+  .contact-location-section {
+    padding: 60px 20px;
+  }
+
+  .contact-location-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  /* Carte en premier (optionnel) */
+  .contact-location-map {
+    order: -1;
+  }
+
+  .contact-location-info h2 {
+    font-size: 28px;
+  }
+
+  .contact-location-info p {
+    font-size: 16px;
+  }
+
+  .contact-location-details {
+    margin: 25px 0;
+  }
+
+  .contact-location-btn {
+    padding: 14px 28px;
+  }
+
+  .contact-location-map iframe {
+    height: 300px;
+  }
+
+}
+
+/* ===========================
+   MOBILES
+=========================== */
+@media (max-width: 480px) {
+
+  .contact-location-section {
+    padding: 50px 18px;
+  }
+
+  .contact-location-info h2 {
+    font-size: 24px;
+  }
+
+  .contact-location-info p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .contact-location-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+  }
+
+  .contact-location-map iframe {
+    height: 250px;
+    border-radius: 10px;
+  }
+
+}
+
 .contact-feedback-cta {
   padding: 80px 20px;
   background: white;
