@@ -452,7 +452,7 @@ body {
 /* GRID */
 .flip-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
@@ -464,7 +464,9 @@ body {
 }
 
 .flip-inner {
-  height: 280px;
+  position: relative;
+  width: 100%;
+  height: 300px;
   transition: transform 0.7s ease;
   transform-style: preserve-3d;
 }
@@ -495,6 +497,7 @@ body {
 .flip-front h3 {
   padding: 16px;
   color: var(--blue-dark);
+  line-height: 1.4;
 }
 
 .flip-back {
@@ -505,6 +508,161 @@ body {
   align-items: center;
   justify-content: center;
   padding: 24px;
+}
+
+.flip-back p {
+  margin: 0;
+}
+
+@media (max-width: 1599px) {
+  .flip-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+}
+
+/* ==========================================
+   Laptop (992px - 1199px)
+========================================== */
+@media (max-width: 1199px) {
+  .flip-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+
+  .flip-inner {
+    height: 290px;
+  }
+
+  .flip-front h3 {
+    font-size: 20px;
+    padding: 14px;
+  }
+
+  .flip-back {
+    padding: 20px;
+  }
+
+  .flip-back p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+/* ==========================================
+   Tablette paysage
+========================================== */
+@media (max-width: 991px) {
+  .flip-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .flip-inner {
+    height: 300px;
+  }
+
+  .flip-front img {
+    height: 190px;
+  }
+
+  .flip-front h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .flip-back p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   Tablette portrait / Grand mobile
+========================================== */
+@media (max-width: 767px) {
+  .flip-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .flip-inner {
+    height: 340px;
+  }
+
+  .flip-front img {
+    height: 220px;
+  }
+
+  .flip-front h3 {
+    font-size: 22px;
+    padding: 18px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .flip-back {
+    padding: 30px;
+  }
+
+  .flip-back p {
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   Petit mobile
+========================================== */
+@media (max-width: 480px) {
+  .flip-grid {
+    gap: 18px;
+  }
+
+  .flip-inner {
+    height: 320px;
+  }
+
+  .flip-front img {
+    height: 200px;
+  }
+
+  .flip-front h3 {
+    font-size: 20px;
+    padding: 16px;
+  }
+
+  .flip-back {
+    padding: 20px;
+  }
+
+  .flip-back p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+/* ==========================================
+   Très petit mobile (iPhone SE, etc.)
+========================================== */
+@media (max-width: 360px) {
+  .flip-inner {
+    height: 300px;
+  }
+
+  .flip-front img {
+    height: 180px;
+  }
+
+  .flip-front h3 {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .flip-back p {
+    font-size: 14px;
+  }
 }
 
 
