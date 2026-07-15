@@ -523,35 +523,193 @@
   background-color: #0056b3;
 }
 
-@media(max-width:768px){
+    /* ===================================================
+   Grand Laptop (1200px)
+=================================================== */
+@media (max-width: 1200px) {
 
-  .nla-services-hero{
-    padding:90px 6%;
+  .nla-services-container {
+    width: 90%;
   }
 
-  .nla-services-hero h1{
-    font-size:2.3rem;
+  .nla-service-section {
+    padding: 40px 300px 40px 0;
   }
 
-  .nla-services-container{
-    width:90%;
+  .left-image {
+    padding-left: 300px;
   }
 
-  .nla-service-title{
-    align-items:flex-start;
+  .service-side-image {
+    width: 260px;
+    height: 190px;
+  }
+}
+
+
+/* ===================================================
+   Laptop (992px)
+=================================================== */
+@media (max-width: 992px) {
+
+  .nla-services-container {
+    width: 92%;
   }
 
-  .nla-service-title h2{
-    font-size:1.3rem;
+  .nla-service-section {
+    padding: 35px 240px 35px 0;
   }
 
-  .nla-service-section p{
-    padding-left:0;
+  .left-image {
+    padding-left: 240px;
   }
 
-  .nla-coming-soon{
-    padding:35px 25px;
+  .service-side-image {
+    width: 210px;
+    height: 160px;
   }
+
+  .nla-service-title h2 {
+    font-size: 1.4rem;
+  }
+
+  .nla-service-section p {
+    padding-left: 50px;
+    line-height: 1.8;
+  }
+
+}
+
+
+/* ===================================================
+   Tablette (768px)
+=================================================== */
+@media (max-width: 768px) {
+
+  .nla-service-section,
+  .left-image {
+    padding: 30px 0;
+  }
+
+  .service-side-image {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: 240px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+  }
+
+  .left-image .service-side-image {
+    left: auto;
+    right: auto;
+  }
+
+  .nla-service-title {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nla-service-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .nla-service-section p {
+    padding-left: 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .nla-coming-soon {
+    padding: 35px;
+  }
+
+}
+
+
+/* ===================================================
+   Mobile (576px)
+=================================================== */
+@media (max-width: 576px) {
+
+  .nla-services-container {
+    width: 95%;
+    margin-top: 50px;
+  }
+
+  .nla-service-section {
+    padding: 25px 0;
+  }
+
+  .service-side-image {
+    height: 210px;
+    margin-bottom: 20px;
+  }
+
+  .nla-service-title {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nla-service-title span {
+    font-size: 1.8rem;
+  }
+
+  .nla-service-title h2 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .nla-service-section p {
+    font-size: .95rem;
+    line-height: 1.7;
+  }
+
+  .nla-coming-soon {
+    padding: 25px;
+    border-radius: 18px;
+  }
+
+  .nla-coming-soon h2 {
+    font-size: 1.6rem;
+  }
+
+  .nla-coming-soon li {
+    font-size: .95rem;
+  }
+
+  .tour-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    padding: 15px;
+  }
+
+}
+
+
+/* ===================================================
+   Petit Mobile (400px)
+=================================================== */
+@media (max-width: 400px) {
+
+  .service-side-image {
+    height: 180px;
+  }
+
+  .nla-service-title h2 {
+    font-size: 1.15rem;
+  }
+
+  .nla-service-section p {
+    font-size: .9rem;
+  }
+
+  .tour-btn {
+    font-size: 16px;
+    padding: 14px;
+  }
+
 }
   </style>
 
