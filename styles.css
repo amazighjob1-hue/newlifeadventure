@@ -3002,6 +3002,107 @@ html[dir="rtl"] .topbar-right {
   color: var(--dark-text);
 }
 
+/* Desktop : inchangé */
+.services-intro{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  width:1200px;
+  max-width:90%;
+  margin:0 auto 80px;
+}
+
+.services-text{
+  flex:1;
+}
+
+.services-intro-image{
+  flex:1;
+  max-width:500px;
+  width:100%;
+  border-radius:12px;
+  transition:0.3s ease;
+}
+
+.services-intro-image:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.1);
+}
+
+.services-intro h2{
+  font-size:38px;
+  color:var(--blue-dark);
+  margin-bottom:20px;
+}
+
+.services-intro p{
+  max-width:800px;
+  color:var(--dark-text);
+}
+
+/* =========================
+   TABLETTE + SMARTPHONE
+   ========================= */
+@media (max-width: 991px){
+
+  .services-intro{
+    flex-direction:column;      /* texte au-dessus, image en dessous */
+    align-items:flex-start;
+    text-align:left;
+    gap:24px;
+    margin-bottom:60px;
+  }
+
+  .services-text{
+    width:100%;
+    order:1;
+  }
+
+  .services-intro-image{
+    width:100%;
+    max-width:100%;
+    order:2;
+    display:block;
+    margin:0 auto;
+  }
+
+  .services-intro h2{
+    font-size:32px;
+  }
+
+  .services-intro p{
+    max-width:100%;
+    margin:0;
+    font-size:16px;
+    line-height:1.7;
+  }
+}
+
+/* =========================
+   PETITS SMARTPHONES
+   ========================= */
+@media (max-width: 576px){
+
+  .services-intro{
+    gap:20px;
+    margin-bottom:50px;
+  }
+
+  .services-intro h2{
+    font-size:28px;
+    line-height:1.2;
+  }
+
+  .services-intro p{
+    font-size:15px;
+    line-height:1.7;
+  }
+
+  .services-intro-image{
+    border-radius:10px;
+  }
+}
 
 .services-section {
   padding: 110px 24px;
