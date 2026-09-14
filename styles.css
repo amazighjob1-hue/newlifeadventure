@@ -30,6 +30,7 @@ body {
 ========================================= */
 
 .nla-topbar {
+  position: fixed;
   background: var(--blue-dark);
   color: white;
   display: flex;
@@ -78,6 +79,7 @@ body {
 ========================================= */
 
 .nla-header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
