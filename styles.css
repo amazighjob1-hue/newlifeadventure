@@ -29,8 +29,13 @@ body {
    TOPBAR
 ========================================= */
 
-.nla-topbar {
+.nla-fixed-header {
   position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nla-topbar {
   background: var(--blue-dark);
   color: white;
   display: flex;
@@ -79,7 +84,6 @@ body {
 ========================================= */
 
 .nla-header {
-  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
