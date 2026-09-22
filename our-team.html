@@ -227,103 +227,160 @@
             Please complete the form below and upload your resume.
         </p>
 
-        <form action="#" method="post">
+<form
+    action="https://formsubmit.co/hr@newlifeadventuredisability.com"
+    method="POST"
+    enctype="multipart/form-data">
 
-            <div class="grid-2">
+```
+<!-- Email subject -->
+<input
+    type="hidden"
+    name="_subject"
+    value="New Job Application - New Life Adventure Disability">
 
-                <input
-                    type="text"
-                    id="fullname"
-                    name="fullname"
-                    placeholder="Full Name *"
-                    required>
+<!-- Email format -->
+<input
+    type="hidden"
+    name="_template"
+    value="table">
 
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email Address *"
-                    required>
+<!-- Spam protection -->
+<input
+    type="hidden"
+    name="_captcha"
+    value="true">
 
-            </div>
+<!-- Redirect after successful submission -->
+<input
+    type="hidden"
+    name="_next"
+    value="https://nladisability.com/thank-you.html">
 
-            <div class="grid-2">
 
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="Phone Number *"
-                    required>
+<div class="grid-2">
 
-                <input
-                    type="text"
-                    id="location"
-                    name="location"
-                    placeholder="Preferred Location">
+    <input
+        type="text"
+        id="fullname"
+        name="Full Name"
+        placeholder="Full Name *"
+        required>
 
-            </div>
+    <input
+        type="email"
+        id="email"
+        name="Email Address"
+        placeholder="Email Address *"
+        required>
 
-            <h3>Roles of Interest</h3>
+</div>
 
-            <div class="checkbox-group">
 
-                <label class="checkbox-item">
-                    <input type="checkbox" name="role[]" value="Support Coordination">
-                    <span>Support Coordination</span>
-                </label>
+<div class="grid-2">
 
-                <label class="checkbox-item">
-                    <input type="checkbox" name="role[]" value="Support Worker">
-                    <span>Support Worker</span>
-                </label>
+    <input
+        type="tel"
+        id="phone"
+        name="Phone Number"
+        placeholder="Phone Number *"
+        required>
 
-                <label class="checkbox-item">
-                    <input type="checkbox" name="role[]" value="Allied Health Assistant">
-                    <span>Allied Health Assistant</span>
-                </label>
+    <input
+        type="text"
+        id="location"
+        name="Preferred Location"
+        placeholder="Preferred Location">
 
-                <label class="checkbox-item">
-                    <input type="checkbox" name="role[]" value="Administration & Client Support">
-                    <span>Administration & Client Support</span>
-                </label>
+</div>
 
-                <label class="checkbox-item">
-                    <input type="checkbox" name="role[]" value="Other">
-                    <span>Other</span>
-                </label>
 
-            </div>
+<h3>Roles of Interest</h3>
 
-            <input
-                type="file"
-                id="resume"
-                name="resume"
-                accept=".pdf,.doc,.docx"
-                required>
+<div class="checkbox-group">
 
-            <textarea
-                id="about"
-                name="about"
-                placeholder="Tell us about yourself..."
-                required></textarea>
+    <label class="checkbox-item">
+        <input
+            type="checkbox"
+            name="Roles of Interest[]"
+            value="Support Coordination">
+        <span>Support Coordination</span>
+    </label>
 
-            <label class="consent">
+    <label class="checkbox-item">
+        <input
+            type="checkbox"
+            name="Roles of Interest[]"
+            value="Support Worker">
+        <span>Support Worker</span>
+    </label>
 
-                <input
-                    type="checkbox"
-                    name="consent"
-                    required>
+    <label class="checkbox-item">
+        <input
+            type="checkbox"
+            name="Roles of Interest[]"
+            value="Allied Health Assistant">
+        <span>Allied Health Assistant</span>
+    </label>
 
-                I consent to my information being used for recruitment purposes.
+    <label class="checkbox-item">
+        <input
+            type="checkbox"
+            name="Roles of Interest[]"
+            value="Administration & Client Support">
+        <span>Administration & Client Support</span>
+    </label>
 
-            </label>
+    <label class="checkbox-item">
+        <input
+            type="checkbox"
+            name="Roles of Interest[]"
+            value="Other">
+        <span>Other</span>
+    </label>
 
-            <button type="submit">
-                Apply Now
-            </button>
+</div>
 
-        </form>
+
+<label for="resume">
+    Resume / CV *
+</label>
+
+<input
+    type="file"
+    id="resume"
+    name="Resume"
+    accept=".pdf,.doc,.docx"
+    required>
+
+
+<textarea
+    id="about"
+    name="About Applicant"
+    placeholder="Tell us about yourself..."
+    required></textarea>
+
+
+<label class="consent">
+
+    <input
+        type="checkbox"
+        name="Recruitment Consent"
+        value="Yes"
+        required>
+
+    I consent to my information being used for recruitment purposes.
+
+</label>
+
+
+<button type="submit">
+    Apply Now
+</button>
+```
+
+</form>
+
 
     </div>
 
